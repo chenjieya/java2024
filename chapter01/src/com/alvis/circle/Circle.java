@@ -1,4 +1,14 @@
-public class Main {
+package com.alvis.circle;
+
+/**
+ * ClassName: Circle
+ * Package: com.alvis.circle
+ * Description:
+ *
+ * @Author: chenjie
+ * @Create: 2024/9/17 17:26
+ */
+public class Circle {
     public static void main(String[] args) {
         // 计算并输出圆的面积
         double pi = 3.14;
