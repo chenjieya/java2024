@@ -11,13 +11,20 @@ package com.alvis.array;
 public class Main {
 
     public static void main(String[] args) {
-         // 1. 数组初始化
+        // 1. 数组初始化
+        // 1.1 数组初始化
         double[] myList;
         myList = new double[]{12.0, 0.12, 12.3, 17.66};
 
+        // 1.2 数组初始化
         String[] foods;
         foods = new String[]{"豆腐", "西红柿", "鸡蛋"};
         foods = new String[3];
+
+        // 1.3 数组初始化
+        int[] prices = {10, 20, 30};
+
+        System.out.println("---------------------------------------------------------------");
 
         // 2. 数组元素的调用
         System.out.println(foods[0]);
