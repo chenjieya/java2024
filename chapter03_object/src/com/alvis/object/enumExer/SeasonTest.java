@@ -4,6 +4,28 @@ public class SeasonTest {
 
     public static void main(String[] args) {
         System.out.println(Season.season1);
+
+        // toString方法 默认打印的是对象名称  season1
+        System.out.println(SeasonEnum.season1);
+
+        // 如果toString重写了，则可以通过name方法去获取
+        System.out.println(SeasonEnum.season2.name());
+
+        // vlaues 返回枚举内所有的对象
+        SeasonEnum[] values = SeasonEnum.values();
+        for (SeasonEnum value : values) {
+            System.out.println(value);
+        }
+
+        // valueof 根据对象的名字获取到对象
+        String objName = "season1";
+        System.out.println(SeasonEnum.valueOf(objName));
+
+        // ordinal  返回当前枚举常量的次序号  默认从0开始
+        System.out.println(SeasonEnum.season1.ordinal());
+
+        SeasonEnum.season4.show();
+
     }
 
 }
